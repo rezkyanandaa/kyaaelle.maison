@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Kyaaelle Maison — Feminine Everyday Wear</title>
+
+  <meta
+    name="description"
+    content="Kyaaelle Maison — modern feminine fashion for Gen Z girls."
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- CUSTOM CURSOR -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- ANNOUNCEMENT -->
+  <div class="announcement">
+    <span data-id="announcement">
+      Free shipping for selected orders ♡
+    </span>
+  </div>
+
+  <!-- HEADER -->
+  <header class="header">
+
+    <a href="#home" class="logo">
+      kyaaelle<span>.maison</span>
+    </a>
+
+    <nav class="desktop-nav">
+      <a href="#home" data-id="home">Home</a>
+      <a href="#collection" data-id="collection">Collection</a>
+      <a href="#promo" data-id="promo">Promo</a>
+      <a href="#about" data-id="about">About</a>
+    </nav>
+
+    <div class="header-actions">
+
+      <!-- LANGUAGE -->
+      <select id="languageSelector" aria-label="Language">
+        <option value="id">ID</option>
+        <option value="en">EN</option>
+      </select>
+
+      <!-- SEARCH -->
+      <button class="icon-btn" id="searchBtn" aria-label="Search">
+        ⌕
+      </button>
+
+      <!-- CART -->
+      <button class="icon-btn cart-button" id="cartBtn" aria-label="Cart">
+        ♡
+        <span class="cart-count">0</span>
+      </button>
+
+      <!-- MOBILE MENU -->
+      <button class="menu-btn" id="menuBtn">
+        ☰
+      </button>
+
+    </div>
+  </header>
+
+
+  <!-- MOBILE NAV -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#home">Home</a>
+    <a href="#collection">Collection</a>
+    <a href="#promo">Promo</a>
+    <a href="#about">About</a>
+  </div>
+
+
+  <!-- SEARCH PANEL -->
+  <div class="search-panel" id="searchPanel">
+
+    <div class="search-inner">
+
+      <div class="search-top">
+        <p>Search our collection</p>
+
+        <button id="closeSearch">
+          ×
+        </button>
+      </div>
+
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search cardigan, blouse, knit..."
+      >
+
+      <div id="searchResults"></div>
+
+    </div>
+
+  </div>
+
+
+  <main id="home">
+
+    <!-- HERO -->
+    <section class="hero">
+
+      <div class="hero-content">
+
+        <p class="eyebrow">
+          KYAELLE MAISON · NEW SEASON
+        </p>
+
+        <h1>
+          Soft looks,
+          <br>
+          <em>pretty moments.</em>
+        </h1>
+
+        <p class="hero-description">
+          Feminine everyday pieces curated for girls
+          who love soft colors, elegant details,
+          and effortless Gen Z style.
+        </p>
+
+        <div class="hero-buttons">
+
+          <a href="#collection" class="primary-btn">
+            Shop collection
+            <span>↗</span>
+          </a>
+
+          <a href="#about" class="secondary-btn">
+            Discover us
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- HERO SLIDER -->
+      <div class="hero-slider">
+
+        <div class="slides">
+
+          <div class="slide active">
+
+            <img
+              src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=1200&q=85"
+              alt="Elegant feminine fashion"
+            >
+
+            <div class="slide-label">
+              <span>01 / 08</span>
+              <span>Soft Girl Edit</span>
+            </div>
+
+          </div>
+
+          <div class="slide">
+
+            <img
+              src="https://images.unsplash.com/photo-1591369822096-ffd140ec948f?auto=format&fit=crop&w=1200&q=85"
+              alt="Pink cardigan fashion"
+            >
+
+            <div class="slide-label">
+              <span>02 / 08</span>
+              <span>Blush Knit</span>
+            </div>
+
+          </div>
+
+          <div class="slide">
+
+            <img
+              src="https://images.unsplash.com/photo-1605763240000-7e93b172d754?auto=format&fit=crop&w=1200&q=85"
+              alt="Ivory blouse"
+            >
+
+            <div class="slide-label">
+              <span>03 / 08</span>
+              <span>Ivory Blouse</span>
+            </div>
+
+          </div>
+
+          <div class="slide">
+
+            <img
+              src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=1200&q=85"
+              alt="Pink striped shirt"
+            >
+
+            <div class="slide-label">
+              <span>04 / 08</span>
+              <span>Rosé Stripe</span>
+            </div>
+
+          </div>
+
+          <div class="slide">
+
+            <img
+              src="https://images.unsplash.com/photo-1618932260643-eee4a2f652a6?auto=format&fit=crop&w=1200&q=85"
+              alt="Knit cardigan"
+            >
+
+            <div class="slide-label">
+              <span>05 / 08</span>
+              <span>Petal Knit</span>
+            </div>
+
+          </div>
+
+          <div class="slide">
+
+            <img
+              src="https://images.unsplash.com/photo-1544957992-20514f595d6f?auto=format&fit=crop&w=1200&q=85"
+              alt="Floral feminine top"
+            >
+
+            <div class="slide-label">
+              <span>06 / 08</span>
+              <span>Garden Bloom</span>
+            </div>
+
+          </div>
+
+          <div class="slide">
+
+            <img
+              src="https://images.unsplash.com/photo-1581044777550-4cfa60707c03?auto=format&fit=crop&w=1200&q=85"
+              alt="Ivory everyday outfit"
+            >
+
+            <div class="slide-label">
+              <span>07 / 08</span>
+              <span>Ivory Daily</span>
+            </div>
+
+          </div>
+
+          <div class="slide">
+
+            <img
+              src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1200&q=85"
+              alt="Elegant Gen Z fashion"
+            >
+
+            <div class="slide-label">
+              <span>08 / 08</span>
+              <span>Maison Edit</span>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="slider-controls">
+
+          <button id="prevSlide">
+            ←
+          </button>
+
+          <div class="slider-dots" id="sliderDots"></div>
+
+          <button id="nextSlide">
+            →
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- MARQUEE -->
+    <div class="marquee">
+
+      <div class="marquee-track">
+
+        <span>FEMININE</span>
+        <i>✦</i>
+
+        <span>TIMELESS</span>
+        <i>✦</i>
+
+        <span>EVERYDAY</span>
+        <i>✦</i>
+
+        <span>SOFT</span>
+        <i>✦</i>
+
+        <span>FEMININE</span>
+        <i>✦</i>
+
+        <span>TIMELESS</span>
+        <i>✦</i>
+
+        <span>EVERYDAY</span>
+        <i>✦</i>
+
+      </div>
+
+    </div>
+
+
+    <!-- COLLECTION -->
+    <section class="collection" id="collection">
+
+      <div class="section-heading">
+
+        <div>
+
+          <p class="eyebrow">
+            THE COLLECTION
+          </p>
+
+          <h2>
+            Pieces you'll
+            <br>
+            <em>love to wear.</em>
+          </h2>
+
+        </div>
+
+        <p>
+          Discover feminine staples with
+          soft colors, lovely textures and
+          effortless silhouettes.
+        </p>
+
+      </div>
+
+
+      <!-- FILTER -->
+      <div class="filters">
+
+        <button class="filter active" data-filter="all">
+          All
+        </button>
+
+        <button class="filter" data-filter="knit">
+          Knitwear
+        </button>
+
+        <button class="filter" data-filter="blouse">
+          Blouse
+        </button>
+
+        <button class="filter" data-filter="shirt">
+          Shirt
+        </button>
+
+      </div>
+
+
+      <div class="product-grid" id="productGrid">
+
+        <!-- PRODUCT 1 -->
+        <article
+          class="product"
+          data-category="knit"
+          data-name="Blush Puff Cardigan"
+          data-price="189000"
+        >
+
+          <div class="product-image">
+
+            <span class="product-tag">
+              NEW
+            </span>
+
+            <img
+              src="https://images.unsplash.com/photo-1591369822096-ffd140ec948f?auto=format&fit=crop&w=900&q=85"
+              alt="Blush Puff Cardigan"
+            >
+
+            <button class="add-cart">
+              + Add
+            </button>
+
+          </div>
+
+          <p class="product-category">
+            KNITWEAR
+          </p>
+
+          <h3>
+            Blush Puff Cardigan
+          </h3>
+
+          <strong>
+            Rp 189.000
+          </strong>
+
+        </article>
+
+
+        <!-- PRODUCT 2 -->
+        <article
+          class="product"
+          data-category="blouse"
+          data-name="Ivory Lace Blouse"
+          data-price="179000"
+        >
+
+          <div class="product-image">
+
+            <img
+              src="https://images.unsplash.com/photo-1605763240000-7e93b172d754?auto=format&fit=crop&w=900&q=85"
+              alt="Ivory Lace Blouse"
+            >
+
+            <button class="add-cart">
+              + Add
+            </button>
+
+          </div>
+
+          <p class="product-category">
+            BLOUSE
+          </p>
+
+          <h3>
+            Ivory Lace Blouse
+          </h3>
+
+          <strong>
+            Rp 179.000
+          </strong>
+
+        </article>
+
+
+        <!-- PRODUCT 3 -->
+        <article
+          class="product"
+          data-category="shirt"
+          data-name="Rosé Stripe Shirt"
+          data-price="169000"
+        >
+
+          <div class="product-image">
+
+            <span class="product-tag">
+              BESTSELLER
+            </span>
+
+            <img
+              src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=900&q=85"
+              alt="Rosé Stripe Shirt"
+            >
+
+            <button class="add-cart">
+              + Add
+            </button>
+
+          </div>
+
+          <p class="product-category">
+            SHIRT
+          </p>
+
+          <h3>
+            Rosé Stripe Shirt
+          </h3>
+
+          <strong>
+            Rp 169.000
+          </strong>
+
+        </article>
+
+
+        <!-- PRODUCT 4 -->
+        <article
+          class="product"
+          data-category="knit"
+          data-name="Petal Knit Cardigan"
+          data-price="199000"
+        >
+
+          <div class="product-image">
+
+            <img
+              src="https://images.unsplash.com/photo-1618932260643-eee4a2f652a6?auto=format&fit=crop&w=900&q=85"
+              alt="Petal Knit Cardigan"
+            >
+
+            <button class="add-cart">
+              + Add
+            </button>
+
+          </div>
+
+          <p class="product-category">
+            KNITWEAR
+          </p>
+
+          <h3>
+            Petal Knit Cardigan
+          </h3>
+
+          <strong>
+            Rp 199.000
+          </strong>
+
+        </article>
+
+
+        <!-- PRODUCT 5 -->
+        <article
+          class="product"
+          data-category="blouse"
+          data-name="Garden Bloom Top"
+          data-price="159000"
+        >
+
+          <div class="product-image">
+
+            <img
+              src="https://images.unsplash.com/photo-1544957992-20514f595d6f?auto=format&fit=crop&w=900&q=85"
+              alt="Garden Bloom Top"
+            >
+
+            <button class="add-cart">
+              + Add
+            </button>
+
+          </div>
+
+          <p class="product-category">
+            BLOUSE
+          </p>
+
+          <h3>
+            Garden Bloom Top
+          </h3>
+
+          <strong>
+            Rp 159.000
+          </strong>
+
+        </article>
+
+
+        <!-- PRODUCT 6 -->
+        <article
+          class="product"
+          data-category="blouse"
+          data-name="Ivory Daily Set"
+          data-price="229000"
+        >
+
+          <div class="product-image">
+
+            <span class="product-tag">
+              NEW
+            </span>
+
+            <img
+              src="https://images.unsplash.com/photo-1581044777550-4cfa60707c03?auto=format&fit=crop&w=900&q=85"
+              alt="Ivory Daily Set"
+            >
+
+            <button class="add-cart">
+              + Add
+            </button>
+
+          </div>
+
+          <p class="product-category">
+            SET
+          </p>
+
+          <h3>
+            Ivory Daily Set
+          </h3>
+
+          <strong>
+            Rp 229.000
+          </strong>
+
+        </article>
+
+
+        <!-- PRODUCT 7 -->
+        <article
+          class="product"
+          data-category="blouse"
+          data-name="Sweet Dot Blouse"
+          data-price="169000"
+        >
+
+          <div class="product-image">
+
+            <img
+              src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=900&q=85"
+              alt="Sweet Dot Blouse"
+            >
+
+            <button class="add-cart">
+              + Add
+            </button>
+
+          </div>
+
+          <p class="product-category">
+            BLOUSE
+          </p>
+
+          <h3>
+            Sweet Dot Blouse
+          </h3>
+
+          <strong>
+            Rp 169.000
+          </strong>
+
+        </article>
+
+
+        <!-- PRODUCT 8 -->
+        <article
+          class="product"
+          data-category="blouse"
+          data-name="Maison Ribbon Top"
+          data-price="179000"
+        >
+
+          <div class="product-image">
+
+            <img
+              src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=85"
+              alt="Maison Ribbon Top"
+            >
+
+            <button class="add-cart">
+              + Add
+            </button>
+
+          </div>
+
+          <p class="product-category">
+            TOP
+          </p>
+
+          <h3>
+            Maison Ribbon Top
+          </h3>
+
+          <strong>
+            Rp 179.000
+          </strong>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- PROMO -->
+    <section class="promo" id="promo">
+
+      <div class="promo-content">
+
+        <p class="eyebrow">
+          SPECIAL OFFER
+        </p>
+
+        <h2>
+          A little treat
+          <br>
+          <em>for you.</em>
+        </h2>
+
+        <p>
+          Get 10% off your first order
+          and discover your new favorite look.
+        </p>
+
+        <a
+          href="https://wa.me/6285215059711?text=want%20to%20order"
+          target="_blank"
+          class="primary-btn"
+        >
+          Claim your offer ↗
+        </a>
+
+      </div>
+
+      <div class="promo-decoration">
+        ♡
+      </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+
+      <p class="eyebrow">
+        ABOUT KYAELLE
+      </p>
+
+      <h2>
+        Made for girls who
+        <br>
+        <em>romanticize the little things.</em>
+      </h2>
+
+      <p class="about-text">
+        Kyaaelle Maison is a little fashion corner
+        created for girls who love feminine,
+        elegant and effortless outfits.
+        Every piece is selected to make
+        everyday moments feel a little prettier.
+      </p>
+
+      <a
+        href="https://www.instagram.com/rzkyaa4_/"
+        target="_blank"
+        class="secondary-btn"
+      >
+        Follow @rzkyaa4_
+      </a>
+
+    </section>
+
+  </main>
+
+
+  <!-- CART DRAWER -->
+  <aside class="cart-drawer" id="cartDrawer">
+
+    <div class="cart-header">
+
+      <h2>
+        Your bag
+      </h2>
+
+      <button id="closeCart">
+        ×
+      </button>
+
+    </div>
+
+    <div class="cart-items" id="cartItems">
+
+      <p class="empty-cart">
+        Your bag is currently empty ♡
+      </p>
+
+    </div>
+
+    <div class="cart-footer">
+
+      <div class="cart-total">
+
+        <span>
+          Total
+        </span>
+
+        <strong id="cartTotal">
+          Rp 0
+        </strong>
+
+      </div>
+
+      <a
+        id="checkoutBtn"
+        class="checkout-btn"
+        href="#"
+        target="_blank"
+      >
+        Checkout via WhatsApp
+      </a>
+
+    </div>
+
+  </aside>
+
+
+  <div class="cart-overlay" id="cartOverlay"></div>
+
+
+  <!-- FLOATING WHATSAPP -->
+  <a
+    href="https://wa.me/6285215059711?text=want%20to%20order"
+    target="_blank"
+    class="whatsapp"
+    aria-label="Chat WhatsApp"
+  >
+
+    <span class="wa-icon">
+      ◔
+    </span>
+
+    <span class="wa-tooltip">
+      want to order?
+    </span>
+
+  </a>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="footer-logo">
+      kyaaelle<span>.maison</span>
+    </div>
+
+    <p>
+      feminine pieces for everyday moments ♡
+    </p>
+
+    <div class="footer-links">
+
+      <a href="#home">
+        Home
+      </a>
+
+      <a href="#collection">
+        Collection
+      </a>
+
+      <a href="#promo">
+        Promo
+      </a>
+
+      <a href="#about">
+        About
+      </a>
+
+      <a
+        href="https://www.instagram.com/rzkyaa4_/"
+        target="_blank"
+      >
+        Instagram
+      </a>
+
+    </div>
+
+    <small>
+      © 2026 Kyaaelle Maison. All rights reserved.
+    </small>
+
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
